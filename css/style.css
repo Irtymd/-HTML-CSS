@@ -3,4 +3,24 @@ p {
     font-size: 15px;
     font-weight: 900;
     line-height: 30px;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+}
+.one {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: right;
+    text-decoration: brown;
+}
+.abc div {
+    color: blue;
+}
+.non2 {
+    color: chartreuse;
 }
