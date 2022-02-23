@@ -1,16 +1,20 @@
-.box {
-    box-sizing: border-box;
-    width: 160px;
-    height: 160px;
-    border: 5px solid green;
+button {
+    cursor: pointer;
 }
-.box1 {
-    background-color: blue;
-    margin: 10px 40px 30px;
-    padding: 10px;
+.menu li:nth-child(odd) {
+    color:  green;
 }
-.box2 {
-    background-color: rgb(90, 206, 23);
-    margin: 30px;
-    margin-bottom: 10px;
+.tab tr:nth-child(odd) {
+    color:  red;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+.tab tr:nth-child(even) {
+    color:  blue;
+    font-weight: bold;
+}
+div::before {
+    content: "\00A9";
+    color: red;
+    font-weight: bold;
 }
