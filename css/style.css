@@ -1,20 +1,15 @@
-button {
-    cursor: pointer;
+div.parent {
+    height: 250px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
 }
-.menu li:nth-child(odd) {
-    color:  green;
+* {
+    box-sizing: border-box;
 }
-.tab tr:nth-child(odd) {
-    color:  red;
-    background-color: aquamarine;
-    font-weight: bold;
-}
-.tab tr:nth-child(even) {
-    color:  blue;
-    font-weight: bold;
-}
-div::before {
-    content: "\00A9";
-    color: red;
-    font-weight: bold;
+.parent div:nth-child(7) {
+    align-self: flex-start;
 }
