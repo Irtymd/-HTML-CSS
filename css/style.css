@@ -1,16 +1,42 @@
-.box {
+:root {
+    --gutter: 30px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
     box-sizing: border-box;
-    width: 160px;
-    height: 160px;
-    border: 5px solid green;
+    font-size: 18px;
 }
-.box1 {
+body,p,h1,h2,h3,u1,o1 {
+    margin: 0;
+    padding: 0;
+}
+.header {
     background-color: blue;
-    margin: 10px 40px 30px;
-    padding: 10px;
 }
-.box2 {
-    background-color: rgb(90, 206, 23);
-    margin: 30px;
-    margin-bottom: 10px;
+.container {
+    background-color: rebeccapurple;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > div {
+    padding: 15px;
+    margin: 0 auto;
+    background-color: wheat;
+    border: 1px solid black;
+}
+.col-3 {
+    width: calc(25% - var(--gutter));
+}
+.col-6 {
+    width: calc(50% - var(--gutter));
+}
+.col-12 {
+    width: calc(100% - var(--gutter));
 }
